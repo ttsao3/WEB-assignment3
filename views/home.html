@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+    <link  rel="stylesheet" href="/css/main.css">
+    <style>
+        .card-actions{
+            padding: 3px;
+        }
+        .card-body{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar flex flex-col items-start space-y-2">
+        <a href="/" class="text-lg">Lego Collection</a>
+        <a href="/about">About</a>
+        <details class="dropdown">
+            <summary>Theme</summary>
+            <ul>
+                <li><a href="/lego/sets?theme=Technic">Technic</a></li>
+                <li><a href="/lego/sets?theme=Books">Books</a></li>
+                <li><a href="/lego/sets?theme=Classic Town">Classic Town</a></li>
+            </ul>
+        </details>
+    </nav>
+    <div class="container mx-auto">
+        <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bolf">Welcome to the Lego Collection</h1>
+                    <p class="py-6">Explore the amazing world of Lego sets.</p>
+                    <a href="/lego/sets" class="btn btn-primary">Start Now!!!</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-full" src="https://rebrickable.com/media/sets/001-1.jpg" alt="Gears">
+                </figure>
+                <div class="card-body p-4">
+                    <h2 class="card-title">Gears set</h2>
+                    <p>This set was released in America (USA/CAN) by Samsonite in 1965. A wonderful set to start your collection.</p>
+                    <div class="card-actions justify-end">
+                        <a href="/lego/sets/001-1" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-full" src="https://rebrickable.com/media/sets/0241357594-1.jpg" alt="Star wars">
+                </figure>
+                <div class="card-body p-4">
+                    <h2 class="card-title">Star Wars set</h2>
+                    <p>Who doesn't love star wars? The set was published by DK Children (Dorling Kindersley) as a hardcover released on August 1, 2019 in the United Kingdom and on August 6, 2019 in the United States. </p>
+                    <div class="card-actions justify-end">
+                        <a href="/lego/sets/0241357594-1" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-full" src="https://rebrickable.com/media/sets/00-6.jpg" alt="Special Offer">
+                </figure>
+                <div class="card-body p-4">
+                    <h2 class="card-title">Special offer</h2>
+                    <p>Cool little set for your kids!!!</p>
+                    <div class="card-actions justify-end">
+                        <a href="/lego/sets/00-6" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
