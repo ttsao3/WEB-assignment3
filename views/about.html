@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lego Collection | About</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            margin-bottom: 2rem; /* Adjust as needed */
+        }
+        .hero p {
+            margin-top: 0; /* Adjust as needed */
+        }
+        .text-lg {
+            font-weight: bold;
+        }
+        .dropdown summary {
+            font-weight: bold;
+        }
+    </style>
     <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar flex flex-col items-start space-y-2">
         <a href="/" class="text-lg">Lego Collection</a>
-        <a class="active" href="/about">About</a>
+        <a href="/about" class="btn btn-primary">About</a>
         <details class="dropdown">
             <summary>Theme</summary>
             <ul>
@@ -20,21 +38,24 @@
         </details>
     </nav>
     <div class="container mx-auto">
-        <div class="hero">
-            <h1>About</h1>
-            <p>All about me and my hobby.</p>
-        </div>
-        <div class="hero bg-base-200 min-h-screen">
-            <div class="hero-content flex-col lg:flex-row">
-                <img src="https://imgur.com/a/5L8j4xY" alt="An image representing me" class="max-w-sm rounded-lg shadow-2xl">
-            </div>
-            <div>
-                <p>My name is Ting-Chen Tsao, I am studying computer programming and analysis program in Seneca Polytechnic</p>
-                <p>
-                    I love playing video games in my free time, and going out with friends, also play sports such as badminton, basketball, baseball and golf.
-                </p>
+        <div class="hero bg-base-200 rounded-lg p-3">
+            <div class="max-w-md">
+                <h1 class="text-center text-5xl font-bold">About me</h1>
+                <p class="py-0">All about me and my hobby.</p>
             </div>
         </div>
     </div>
+    <div class="grid grid-cols-1 md:gird-cols-2 gap-6">
+        <div>
+            <img class="w-full rounded-lg" src="/src/iLoveVideoGames.jpg" alt="An image representing me">
+        </div>
+        <div>
+            <p>My name is Ting-Chen Tsao, I am studying computer programming and analysis program in Seneca Polytechnic.</p>
+            <p>
+                I love playing video games in my free time, and going out with friends, also play sports such as badminton, basketball, baseball and golf.
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
