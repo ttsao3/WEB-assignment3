@@ -22,7 +22,7 @@ const HTTP_PORT = process.env.PORT || 8080;
 app.use(express.static('public')); //middleware
 
 // Serve static files from the 'src' directory
-app.use(express.static(path.join(__dirname, 'src')));
+//app.use(express.static(path.join(__dirname, 'src')));
 
 // routes you define, homepage route
 app.get('/', (req, res) => {
